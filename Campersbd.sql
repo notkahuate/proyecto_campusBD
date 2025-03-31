@@ -229,3 +229,12 @@ CREATE TABLE Evaluacion (
     CONSTRAINT chk_nota_practica CHECK (nota_practica >= 0 AND nota_practica <= 100),
     CONSTRAINT chk_nota_quizzes CHECK (nota_trabajos_quizzes >= 0 AND nota_trabajos_quizzes <= 100)
 );
+
+CREATE TABLE Notificacion (
+    id_notificacion INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT,
+    mensaje TEXT,
+    fecha_notificacion DATETIME,
+    leido BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+);
