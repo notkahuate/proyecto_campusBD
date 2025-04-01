@@ -239,14 +239,15 @@ CREATE TABLE Ubicacion_Sede (
 CREATE TABLE Evaluacion (
     id_evaluacion INT AUTO_INCREMENT PRIMARY KEY,
     id_inscripcion INT,
-    id_skill INT,
+    id_modulo INT,
     fecha_evaluacion DATE,
     nota_teorica DECIMAL(5,2),         
     nota_practica DECIMAL(5,2),        
     nota_trabajos_quizzes DECIMAL(5,2),  
     calificacion_final DECIMAL(5,2),    
+    Estado ENUM('Aprobado', 'Reprobado'),
     FOREIGN KEY (id_inscripcion) REFERENCES Inscripcion(id_inscripcion),
-    FOREIGN KEY (id_skill) REFERENCES Skill(id_skill),
+    FOREIGN KEY (id_modulo) REFERENCES Modulo_Aprendizaje(id_modulo),
     CONSTRAINT chk_nota_teorica CHECK (nota_teorica >= 0 AND nota_teorica <= 100),
     CONSTRAINT chk_nota_practica CHECK (nota_practica >= 0 AND nota_practica <= 100),
     CONSTRAINT chk_nota_quizzes CHECK (nota_trabajos_quizzes >= 0 AND nota_trabajos_quizzes <= 100)
