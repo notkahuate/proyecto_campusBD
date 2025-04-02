@@ -17,7 +17,8 @@
 | 📌 JOINs Básicos | [🔍 Ver](Consultas/Joins.MD) |
 | 📌 JOINs con condiciones específicas | [🔍 Ver](Consultas/Joins2.MD) |
 | 📌 JOINs con funciones de agregación | [🔍 Ver](Consultas/Joins3.MD) |
-| 📌 TRIGGERS | [🔍 Ver](Consultas/bd/triggers.sql) |
+| 📌 TRIGGERS | [🔍 Ver](bd/triggers.sql) |
+| 📌 IMAGE | [🔍 Ver](image/Digramas.md) |
 
 
 ---
