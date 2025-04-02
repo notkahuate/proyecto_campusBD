@@ -18,7 +18,7 @@
 | 📌 JOINs con condiciones específicas | [🔍 Ver](Consultas/Joins2.MD) |
 | 📌 JOINs con funciones de agregación | [🔍 Ver](Consultas/Joins3.MD) |
 | 📌 TRIGGERS | [🔍 Ver](bd/triggers.sql) |
-| 📌 IMAGE | [🔍 Ver](image/Digramas.md) |
+| 📌 IMAGE | [🔍 Ver](Image/Digramas.md) |
 
 
 ---

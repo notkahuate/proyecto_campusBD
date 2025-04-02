@@ -10,6 +10,14 @@ CREATE TABLE Camper (
     nivel_riesgo VARCHAR(20)
 );
 
+CREATE TABLE Trainers_skills(
+    id_trainer_skill INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre_certifiacion VARCHAR(50),
+    nivel_experiencia ENUM('Básico', 'Intermedio', 'Avanzado', 'Experto') NOT NULL,
+    fecha_certificacion DATE,
+    certificado_url VARCHAR(255)
+);
+
 
 
 CREATE TABLE Direccion (
@@ -313,12 +321,4 @@ CREATE TABLE EGRESADO (
     FOREIGN KEY (id_datoscamper) REFERENCES DATOS_CAMPER(id_datoscamper)
 );
 
-
-CREATE TABLE Trainers_skills(
-    id_trainer_skill INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre_certifiacion VARCHAR(50),
-    nivel_experiencia ENUM('Básico', 'Intermedio', 'Avanzado', 'Experto') NOT NULL,
-    fecha_certificacion DATE,
-    certificado_url VARCHAR(255)
-);
 
