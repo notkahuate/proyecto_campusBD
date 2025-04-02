@@ -162,7 +162,9 @@ VALUES
     ('Inactivo'), 
     ('Egresado'), 
     ('Retirado'),
-    ('Graduado');
+    ('Graduado'),
+    ('Inscrito');
+
 
 -- Insert into Ruta_BD
 INSERT INTO Ruta_BD (BD)
@@ -340,8 +342,8 @@ VALUES
 -- Insert into Ubicacion_Sede
 INSERT INTO Ubicacion_Sede (id_empresa, id_tipo_sede, ciudad, direccion, region)
 VALUES (1, 1, 'Bogotá', 'Calle 123, #45-67', 'Cundinamarca'),
-VALUES (1, 1, 'TIBU', 'Calle 123, #45-67', 'Norte santander'),
-VALUES (1, 1, 'Bucaramanga', 'Calle 123, #45-67', 'Santander');
+ (1, 1, 'TIBU', 'Calle 123, #45-67', 'Norte santander'),
+ (1, 1, 'Bucaramanga', 'Calle 123, #45-67', 'Santander');
 
 
 
@@ -404,18 +406,18 @@ VALUES
     (10, 10, '2025-04-01');
 
     -- Insert into Evaluacion
-INSERT INTO Evaluacion (id_inscripcion, id_skill, fecha_evaluacion, nota_teorica, nota_practica, nota_trabajos_quizzes, calificacion_final)
+INSERT INTO Evaluacion (id_inscripcion, id_modulo, fecha_evaluacion, nota_teorica, nota_practica, nota_trabajos_quizzes, calificacion_final,Estado)
 VALUES 
-    (1, 1, '2025-04-01', 85.00, 90.00, 88.00, 87.67),
-    (2, 2, '2025-04-01', 78.00, 82.00, 80.00, 80.00),
-    (3, 3, '2025-04-01', 92.00, 95.00, 94.00, 93.67),
-    (4, 4, '2025-04-01', 88.00, 85.00, 87.00, 86.67),
-    (5, 5, '2025-04-01', 90.00, 91.00, 92.00, 91.00),
-    (6, 6, '2025-04-01', 75.00, 78.00, 80.00, 77.67),
-    (7, 7, '2025-04-01', 95.00, 96.00, 98.00, 96.33),
-    (8, 8, '2025-04-01', 80.00, 85.00, 83.00, 82.67),
-    (9, 9, '2025-04-01', 72.00, 70.00, 75.00, 72.33),
-    (10, 10, '2025-04-01', 89.00, 88.00, 87.00, 88.00);
+    (1, 1, '2025-04-01', 85.00, 90.00, 88.00, 87.67 ,'Aprobado'),
+    (2, 2, '2025-04-01', 78.00, 82.00, 80.00, 80.00,'Aprobado'),
+    (3, 3, '2025-04-01', 92.00, 95.00, 94.00, 93.67,'Aprobado'),
+    (4, 4, '2025-04-01', 88.00, 85.00, 87.00, 86.67,'Aprobado'),
+    (5, 5, '2025-04-01', 90.00, 91.00, 92.00, 91.00,'Aprobado'),
+    (6, 6, '2025-04-01', 75.00, 78.00, 80.00, 77.67,'Aprobado'),
+    (7, 7, '2025-04-01', 95.00, 96.00, 98.00, 96.33,'Aprobado'),
+    (8, 8, '2025-04-01', 80.00, 85.00, 83.00, 82.67,'Aprobado'),
+    (9, 9, '2025-04-01', 72.00, 70.00, 75.00, 72.33,'Aprobado'),
+    (10, 10, '2025-04-01', 89.00, 88.00, 87.00, 88.00,'Aprobado');
 
 
 

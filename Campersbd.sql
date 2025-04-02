@@ -102,7 +102,7 @@ CREATE TABLE Horario_Clase (
 
 CREATE TABLE Estado_camper (
     id_estado int AUTO_INCREMENT PRIMARY KEY,
-    nombre_estado ENUM('Egresado', 'Activo', 'Inactivo', 'Retirado', 'Graduado') DEFAULT 'Activo'
+    nombre_estado ENUM('Egresado', 'Activo', 'Inactivo', 'Retirado', 'Graduado','Inscrito') DEFAULT 'Activo'
 );
 
 CREATE TABLE Ruta_BD(
@@ -161,7 +161,7 @@ CREATE TABLE Asignacion_Trainner (
     id_ruta INT,
     id_area INT,
     FOREIGN KEY (id_ruta) REFERENCES Ruta_Entrenamiento(id_ruta),
-    FOREIGN KEY (id_trainner) REFERENCES Trainner(id_trainner),
+    FOREIGN KEY (id_trainner) REFERENCES Trainner(id_trainner) ON DELETE CASCADE,
     FOREIGN KEY (id_area) REFERENCES Area_Entrenamiento(id_area) 
 
 );
@@ -202,9 +202,11 @@ CREATE TABLE DATOS_TRAINNER(
     id_trainner INT,
     id_telefono int NOT NULL,
     id_usuario int NOT NULL,
-    FOREIGN KEY (id_trainner) REFERENCES Trainner(id_trainner),
+    id_trainer_skill int,
+    FOREIGN KEY (id_trainner) REFERENCES Trainner(id_trainner) ON DELETE CASCADE,
     FOREIGN KEY (id_telefono) REFERENCES Telefono_Trainner(id_telefono),
-    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_trainer_skill) REFERENCES Trainers_skills(id_trainer_skill)
 );
 
 CREATE TABLE Historial_estado_camper(
@@ -245,7 +247,7 @@ CREATE TABLE Evaluacion (
     nota_practica DECIMAL(5,2),        
     nota_trabajos_quizzes DECIMAL(5,2),  
     calificacion_final DECIMAL(5,2),    
-    Estado ENUM('Aprobado', 'Reprobado'),
+    Estado ENUM('Aprobado', 'Reprobado','Bajo_Rendimiento'),
     FOREIGN KEY (id_inscripcion) REFERENCES Inscripcion(id_inscripcion),
     FOREIGN KEY (id_modulo) REFERENCES Modulo_Aprendizaje(id_modulo),
     CONSTRAINT chk_nota_teorica CHECK (nota_teorica >= 0 AND nota_teorica <= 100),
@@ -269,7 +271,7 @@ CREATE TABLE Notificacion_Trainer (
     mensaje TEXT,
     fecha_notificacion DATETIME,
     leido BOOLEAN DEFAULT FALSE,
-    FOREIGN KEY (id_datosentrenador) REFERENCES DATOS_TRAINNER(id_datos_trainner),
+    FOREIGN KEY (id_datosentrenador) REFERENCES DATOS_TRAINNER(id_datos_trainner) ON DELETE CASCADE,
     FOREIGN KEY (id_ruta) REFERENCES Ruta_Entrenamiento(id_ruta)
 );
 
@@ -299,9 +301,24 @@ CREATE TABLE Asignacion_Entrenador_Grupo (
     id_area INT NOT NULL,
     fecha_inicio DATE NOT NULL,
     fecha_fin DATE,
-    FOREIGN KEY (id_entrenador) REFERENCES Trainner(id_trainner),
+    FOREIGN KEY (id_entrenador) REFERENCES Trainner(id_trainner) ON DELETE CASCADE,
     FOREIGN KEY (id_grupo) REFERENCES Grupo_Campers(id_grupo),
     FOREIGN KEY (id_area) REFERENCES Area_Entrenamiento(id_area)
 );
 
+CREATE TABLE EGRESADO (
+    id_egresado INT AUTO_INCREMENT PRIMARY KEY,
+    id_datoscamper int ,
+    fecha_graduacion DATE,
+    FOREIGN KEY (id_datoscamper) REFERENCES DATOS_CAMPER(id_datoscamper)
+);
+
+
+CREATE TABLE Trainers_skills(
+    id_trainer_skill INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre_certifiacion VARCHAR(50),
+    nivel_experiencia ENUM('Básico', 'Intermedio', 'Avanzado', 'Experto') NOT NULL,
+    fecha_certificacion DATE,
+    certificado_url VARCHAR(255)
+);
 
