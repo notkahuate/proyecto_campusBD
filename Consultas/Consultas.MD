@@ -2,18 +2,19 @@
 
 ## 📋 Categorías de Consultas
 
-🔹 [Consultas de Campers](Consultas/Consultas.MD)
-🔹 [Consultas de Evaluaciones](Consultas/consultas2.MD) 
-🔹 [Consultas de Rutas](Consultas/consultas3.MD) 
-🔹 [Consultas de Trainers](Consultas/consultas4.MD)  
-🔹 [SubConsultas](Consultas/subconsultas.md)
-🔹 [Procedimientos](Consultas/Procedimientos.MD)      
-🔹 [Consultas con JOINs Básicos ](Consultas/Joins.MD) 
-🔹 [Consultas con JOINs JOINs con condiciones específica ](Consultas/Joins2.MD)
-🔹 [Consultas con JOINs  JOINs con funciones de agregación ](Consultas/Joins3.MD) 
-🔹 [TRIGGERS](bd/triggers.sql)  
+| Categoría | Enlace |
+|-----------|--------|
+| 📌 Consultas de Campers | [🔍 Ver](Consultas.MD) |
+| 📌 Consultas de Evaluaciones | [🔍 Ver](consultas2.MD) |
+| 📌 Consultas de Rutas | [🔍 Ver](consultas3.MD) |
+| 📌 Consultas de Trainers | [🔍 Ver](consultas4.MD) |
+| 📌 SubConsultas | [🔍 Ver](subconsultas.md) |
+| 📌 Procedimientos | [🔍 Ver](Procedimientos.MD) |
+| 📌 JOINs Básicos | [🔍 Ver](Joins.MD) |
+| 📌 JOINs con condiciones específicas | [🔍 Ver](Joins2.MD) |
+| 📌 JOINs con funciones de agregación | [🔍 Ver](Joins3.MD) |
+| 📌 TRIGGERS | [🔍 Ver](bd/triggers.sql) |
 
----
 
 Este proyecto está diseñado para gestionar la información de los campers, sus inscripciones, estado, rutas, nivel de riesgo, entre otros. A continuación, se presentan algunas consultas SQL que puedes utilizar para gestionar los datos de los campers.
 
