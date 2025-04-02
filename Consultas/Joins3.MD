@@ -1,5 +1,21 @@
 # Proyecto de Base de Datos - Consultas con JOINs y Funciones de Agregación
 
+
+## 📋 Categorías de Consultas
+
+🔹 [Consultas de Campers](Consultas\Consultas.MD)
+🔹 [Consultas de Evaluaciones](Consultas\consultas2.MD) 
+🔹 [Consultas de Rutas](Consultas\consultas3.MD) 
+🔹 [Consultas de Trainers](Consultas\consultas4.MD)   
+🔹 [SubConsultas](Consultas\subconsultas.md)
+🔹 [Procedimientos](Consultas\Procedimientos.MD)      
+🔹 [Consultas con JOINs Básicos ](Consultas\Joins.MD) 
+🔹 [Consultas con JOINs JOINs con condiciones específica ](Consultas\Joins2.MD)
+🔹 [Consultas con JOINs  JOINs con funciones de agregación ](Consultas\Joins3.MD) 
+🔹 [TRIGGERS](bd\triggers.sql)  
+
+---
+
 Este proyecto contiene ejemplos de consultas SQL utilizando JOINs y funciones de agregación (como `AVG()`, `COUNT()`, etc.) para obtener estadísticas relacionadas con los campers, módulos, rutas, trainers, y áreas de entrenamiento.
 
 ## Consultas SQL con JOINs y Funciones de Agregación

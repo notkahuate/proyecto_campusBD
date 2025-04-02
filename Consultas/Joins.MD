@@ -1,5 +1,21 @@
 # Proyecto de Base de Datos - Consultas con JOINs
 
+
+## 📋 Categorías de Consultas
+
+🔹 [Consultas de Campers](Consultas\Consultas.MD)
+🔹 [Consultas de Evaluaciones](Consultas\consultas2.MD) 
+🔹 [Consultas de Rutas](Consultas\consultas3.MD) 
+🔹 [Consultas de Trainers](Consultas\consultas4.MD)   
+🔹 [SubConsultas](Consultas\subconsultas.md)
+🔹 [Procedimientos](Consultas\Procedimientos.MD)      
+🔹 [Consultas con JOINs Básicos ](Consultas\Joins.MD) 
+🔹 [Consultas con JOINs JOINs con condiciones específica ](Consultas\Joins2.MD)
+🔹 [Consultas con JOINs  JOINs con funciones de agregación ](Consultas\Joins3.MD) 
+🔹 [TRIGGERS](bd\triggers.sql)  
+
+---
+
 Este proyecto incluye ejemplos de consultas SQL utilizando JOINs básicos (INNER JOIN, LEFT JOIN, etc.) para obtener información relacionada entre diferentes tablas. Estas consultas están orientadas a obtener detalles sobre los campers, rutas, módulos, trainers y áreas de entrenamiento.
 
 ## Consultas SQL con JOINs

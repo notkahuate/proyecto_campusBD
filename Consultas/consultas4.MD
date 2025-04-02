@@ -1,5 +1,20 @@
 # Proyecto de Base de Datos - Gestión de Trainers
 
+## 📋 Categorías de Consultas
+
+🔹 [Consultas de Campers](Consultas\Consultas.MD)
+🔹 [Consultas de Evaluaciones](Consultas\consultas2.MD) 
+🔹 [Consultas de Rutas](Consultas\consultas3.MD) 
+🔹 [Consultas de Trainers](Consultas\consultas4.MD)   
+🔹 [SubConsultas](Consultas\subconsultas.md)
+🔹 [Procedimientos](Consultas\Procedimientos.MD)      
+🔹 [Consultas con JOINs Básicos ](Consultas\Joins.MD) 
+🔹 [Consultas con JOINs JOINs con condiciones específica ](Consultas\Joins2.MD)
+🔹 [Consultas con JOINs  JOINs con funciones de agregación ](Consultas\Joins3.MD) 
+🔹 [TRIGGERS](bd\triggers.sql)  
+
+---
+
 Este proyecto tiene como objetivo gestionar la información sobre los entrenadores, su asignación a rutas, módulos, áreas de trabajo y disponibilidad. A continuación, se presentan las consultas SQL para obtener información detallada sobre los entrenadores.
 
 ## Consultas SQL

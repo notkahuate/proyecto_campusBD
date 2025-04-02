@@ -1,5 +1,6 @@
 -- Triggers for the database
 
+
 -- 1. Al insertar una evaluación, calcular automáticamente la nota final
 DELIMITER $$
 
