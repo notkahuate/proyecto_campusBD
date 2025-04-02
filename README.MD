@@ -4,16 +4,21 @@
 
 ## 📋 Categorías de Consultas
 
-🔹 [Consultas de Campers](Consultas/Consultas.MD)
-🔹 [Consultas de Evaluaciones](Consultas/consultas2.MD) 
-🔹 [Consultas de Rutas](Consultas/consultas3.MD) 
-🔹 [Consultas de Trainers](Consultas/consultas4.MD)  
-🔹 [SubConsultas](Consultas/subconsultas.md)
-🔹 [Procedimientos](Consultas/Procedimientos.MD)      
-🔹 [Consultas con JOINs Básicos ](Consultas/Joins.MD) 
-🔹 [Consultas con JOINs JOINs con condiciones específica ](Consultas/Joins2.MD)
-🔹 [Consultas con JOINs  JOINs con funciones de agregación ](Consultas/Joins3.MD) 
-🔹 [TRIGGERS](bd/triggers.sql)  
+## 📋 Categorías de Consultas
+
+| Categoría | Enlace |
+|-----------|--------|
+| 📌 Consultas de Campers | [🔍 Ver](Consultas/Consultas.MD) |
+| 📌 Consultas de Evaluaciones | [🔍 Ver](Consultas/consultas2.MD) |
+| 📌 Consultas de Rutas | [🔍 Ver](Consultas/consultas3.MD) |
+| 📌 Consultas de Trainers | [🔍 Ver](Consultas/consultas4.MD) |
+| 📌 SubConsultas | [🔍 Ver](Consultas/subconsultas.md) |
+| 📌 Procedimientos | [🔍 Ver](Consultas/Procedimientos.MD) |
+| 📌 JOINs Básicos | [🔍 Ver](Consultas/Joins.MD) |
+| 📌 JOINs con condiciones específicas | [🔍 Ver](Consultas/Joins2.MD) |
+| 📌 JOINs con funciones de agregación | [🔍 Ver](Consultas/Joins3.MD) |
+| 📌 TRIGGERS | [🔍 Ver](Consultas/bd/triggers.sql) |
+
 
 ---
 
